@@ -56,6 +56,7 @@ public class ControlTiket {
                 model.insert(nik, nama, alamat, notlp, asal, tujuan, kelas, tanggal, harga);
                 String dataPenumpang[][] = model.readPenumpang();
                 rp.tabel.setModel((new JTable(dataPenumpang, rp.kolom)).getModel());
+                input.dispose();
                 Menu menu = new Menu();
             }
         });

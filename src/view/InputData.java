@@ -32,12 +32,10 @@ public class InputData extends JFrame{
     JTextField fharga = new JTextField(10);
     
     JLabel lasal = new JLabel("DARI");
-    String[] namaasal =
-            {"-Pilih Asal-", "Yogyakarta"};
+    String[] namaasal = {"-Pilih Asal-", "Yogyakarta"};
     JComboBox cmbasal = new JComboBox(namaasal);
     JLabel ltujuan = new JLabel("TUJUAN");
-    String[] namatujuan =
-            {"-Pilih Tujuan-", "Jakarta"};
+    String[] namatujuan = {"-Pilih Tujuan-", "Jakarta", "Bandung"};
     JComboBox cmbtujuan = new JComboBox(namatujuan);
     
     JLabel lKelas = new JLabel("Kelas");
@@ -45,16 +43,13 @@ public class InputData extends JFrame{
     JRadioButton rb2 = new JRadioButton("Economy ");
     
     JLabel Tanggal = new JLabel("Tanggal ");
-    String[] tanggal =
-            {"-Pilih Tanggal-","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31",};
+    String[] tanggal ={"-Pilih Tanggal-","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31",};
     JComboBox Cbtanggal = new JComboBox(tanggal);
     JLabel Bulan = new JLabel("Bulan ");
-    String[] bulan =
-            {"-Pilih Bulan-"," Januari "," Februari "," Maret "," April "," Mei "," Juni "," Juli "," Agustus "," September "," Oktober "," November "," Desember ",};
+    String[] bulan ={"-Pilih Bulan-"," Januari "," Februari "," Maret "," April "," Mei "," Juni "," Juli "," Agustus "," September "," Oktober "," November "," Desember ",};
     JComboBox Cbbulan = new JComboBox(bulan);
     JLabel Tahun=new JLabel("Tahun");
-    String[] tahun=
-            {"-Pilih Tahun-","2020","2021",};
+    String[] tahun={"-Pilih Tahun-","2021","2022",};
     JComboBox CbTahun=new JComboBox(tahun);
     JLabel harga=new JLabel("Harga");
     JLabel harga1;
@@ -102,34 +97,34 @@ public class InputData extends JFrame{
         add(btnBeli);
         add(bKembali);
         
-    Judul.setFont(new java.awt.Font("Couture", 2, 24));
-    Judul.setForeground(Color.orange);
-	Judul.setBounds(170,2,420,40);
-    lnik.setBounds(20,70,150,20);
-    tnik.setBounds(70,70,150,20);
-    lnama.setBounds(20,90,150,20);
-    tnama.setBounds(70,90,150,20);
-    lalamat.setBounds(20,110,150,20);
-    talamat.setBounds(70,110,150,20);
-    lnotlp.setBounds(20,130,150,20);
-    tnotlp.setBounds(70,130,150,20);
-    harga.setBounds(310,190,120,20);
-	harga1.setBounds(430,190,120,20);
-    Cbtanggal.setBounds(310,160,120,20);
-    Tanggal.setBounds(310,140,80,20);
-    Cbbulan.setBounds(445,160,120,20);
-    Bulan.setBounds(445,140,120,20);
-    CbTahun.setBounds(580,160,120,20);
-    Tahun.setBounds(580,140,120,20);
-	fharga.setBounds(580,190,100,20);
-	lasal.setBounds(310,70,120,20);
-	cmbasal.setBounds(430,70,150,20);
-    ltujuan.setBounds(310,90,150,20);
-	cmbtujuan.setBounds(430,90,150,20);
-	lKelas.setBounds(310,115,120,20);
-	rb1.setBounds(430,115,100,20);
-	rb2.setBounds(560,115,90,20);
-	btnBeli.setBounds(400,220,120,20);
+        Judul.setFont(new java.awt.Font("Couture", 2, 24));
+        Judul.setForeground(Color.red);
+        Judul.setBounds(170,2,420,40);
+        lnik.setBounds(20,70,150,20);
+        tnik.setBounds(70,70,150,20);
+        lnama.setBounds(20,90,150,20);
+        tnama.setBounds(70,90,150,20);
+        lalamat.setBounds(20,110,150,20);
+        talamat.setBounds(70,110,150,20);
+        lnotlp.setBounds(20,130,150,20);
+        tnotlp.setBounds(70,130,150,20);
+        harga.setBounds(310,190,120,20);
+        harga1.setBounds(430,190,120,20);
+        Cbtanggal.setBounds(310,160,120,20);
+        Tanggal.setBounds(310,140,80,20);
+        Cbbulan.setBounds(445,160,120,20);
+        Bulan.setBounds(445,140,120,20);
+        CbTahun.setBounds(580,160,120,20);
+        Tahun.setBounds(580,140,120,20);
+        fharga.setBounds(580,190,100,20);
+        lasal.setBounds(310,70,120,20);
+        cmbasal.setBounds(430,70,150,20);
+        ltujuan.setBounds(310,90,150,20);
+        cmbtujuan.setBounds(430,90,150,20);
+        lKelas.setBounds(310,115,120,20);
+        rb1.setBounds(430,115,100,20);
+        rb2.setBounds(560,115,90,20);
+        btnBeli.setBounds(400,220,120,20);
         bKembali.setBounds(10,200,100,50);
         
         setVisible(true);
@@ -195,7 +190,6 @@ public class InputData extends JFrame{
             Object[] ob = new Object[1];
             ob[0]=  rs.getString(1);                     
             harga1.setText((String) ob[0]);
-           // fungsi ini bertugas menampung isi dari database 
         }
     } catch (Exception e) {
         System.out.println(e.getMessage());

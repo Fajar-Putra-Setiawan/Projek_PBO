@@ -12,8 +12,6 @@ import model.ModelTiket;
 
 public class Menu extends JFrame implements ActionListener{
     JLabel lJudul = new JLabel(" PEMESANAN TIKET KERETA API");
-    JLabel lPesan = new JLabel("Pesan Tiket");
-    JLabel lRiwayat = new JLabel("Riwayat Perjalanan");
     JButton btnPesan = new JButton("PESAN TIKET");
     JButton btnRiwayat = new JButton("RIWAYAT PENUMPANG");
     
@@ -23,19 +21,13 @@ public class Menu extends JFrame implements ActionListener{
         setSize(580,250);
 	setLayout(null);
         add (lJudul);
-	add(lPesan);
-        add(lRiwayat);
 	add(btnPesan);
         add(btnRiwayat);
 
         lJudul.setFont(new java.awt.Font("Couture", 5, 24));
-        lJudul.setForeground(new Color(5, 204, 153));
+        lJudul.setForeground(new Color(10, 100, 103));
         
-        lPesan.setFont(new java.awt.Font("Futura Bk Bt", 2, 12));
-        lRiwayat.setFont(new java.awt.Font("Futura Bk Bt", 2, 12));
 	lJudul.setBounds(100,2,400,40);
-	lPesan.setBounds(150,150,120,20);
-        lRiwayat.setBounds(340,150,150,20);
 	btnPesan.setBounds(100,100,180,50);
         btnRiwayat.setBounds(300,100,180,50);
         

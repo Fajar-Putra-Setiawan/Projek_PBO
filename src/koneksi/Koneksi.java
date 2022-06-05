@@ -16,7 +16,6 @@ public class Koneksi {
     
     public Koneksi(){
         try{
-            // Class.forName("com.mysql.cj.jdbc.Driver");
             koneksi = (Connection) DriverManager.getConnection(DB_URL, dbusername, dbpass);
             System.out.println("Koneksi Berhasil");
         }catch(Exception ex){
